@@ -4,6 +4,7 @@ public class InputTouch : MonoBehaviour
 {
     [SerializeField] private Rigidbody _rb;
     [SerializeField] private float _speed;
+    [SerializeField] private float _maxSpeed;
     [SerializeField] private float _dragFactor;
 
     private void Update()
@@ -17,6 +18,7 @@ public class InputTouch : MonoBehaviour
             {
                 case TouchPhase.Moved:
                     _rb.AddForce(force * _speed);
+                    SpeedLimit(_maxSpeed);
                     break;
                 case TouchPhase.Ended:
                 case TouchPhase.Canceled:
@@ -30,9 +32,11 @@ public class InputTouch : MonoBehaviour
     {
         _rb.velocity *= _dragFactor;
 
-        if (_rb.velocity.magnitude < 0.01f)
-        {
-            _rb.velocity = Vector3.zero;
-        }
+        if (_rb.velocity.magnitude < 0.01f) _rb.velocity = Vector3.zero;
+    }
+
+    private void SpeedLimit(float speed)
+    {
+        if (_rb.velocity.magnitude > speed) _rb.velocity = _rb.velocity.normalized * speed;
     }
 }
