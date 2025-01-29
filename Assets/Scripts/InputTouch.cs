@@ -28,7 +28,7 @@ public class InputTouch : MonoBehaviour
         }
     }
 
-    private void Decelerate()
+    public void Decelerate()
     {
         _rb.velocity *= _dragFactor;
 
