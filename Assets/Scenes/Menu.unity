@@ -729,6 +729,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436625022}
   m_CullTransparentMesh: 1
+--- !u!82 &453811483 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1517027274580789632, guid: 0bb5d9d3ffe911341ad40804011a30a6, type: 3}
+  m_PrefabInstance: {fileID: 2110601101176573286}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &520956059
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,6 +820,18 @@ MonoBehaviour:
       - m_Target: {fileID: 79545148}
         m_TargetAssemblyTypeName: Levels, Assembly-CSharp
         m_MethodName: NextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 453811483}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1864,6 +1881,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 453811483}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1470741217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2072,6 +2101,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 453811483}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1640035633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2205,6 +2246,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 453811483}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1809631280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2330,6 +2383,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 453811483}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2510,6 +2575,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067178772}
   m_CullTransparentMesh: 1
+--- !u!1001 &2110601101176573286
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 671979072747451289, guid: 0bb5d9d3ffe911341ad40804011a30a6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 923.39856
+      objectReference: {fileID: 0}
+    - target: {fileID: 671979072747451289, guid: 0bb5d9d3ffe911341ad40804011a30a6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 339.88998
+      objectReference: {fileID: 0}
+    - target: {fileID: 671979072747451289, guid: 0bb5d9d3ffe911341ad40804011a30a6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.4386222
+      objectReference: {fileID: 0}
+    - target: {fileID: 671979072747451289, guid: 0bb5d9d3ffe911341ad40804011a30a6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 671979072747451289, guid: 0bb5d9d3ffe911341ad40804011a30a6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 671979072747451289, guid: 0bb5d9d3ffe911341ad40804011a30a6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 671979072747451289, guid: 0bb5d9d3ffe911341ad40804011a30a6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 671979072747451289, guid: 0bb5d9d3ffe911341ad40804011a30a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 671979072747451289, guid: 0bb5d9d3ffe911341ad40804011a30a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 671979072747451289, guid: 0bb5d9d3ffe911341ad40804011a30a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194964660315390806, guid: 0bb5d9d3ffe911341ad40804011a30a6, type: 3}
+      propertyPath: m_Name
+      value: ButtonSound
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0bb5d9d3ffe911341ad40804011a30a6, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2519,3 +2641,4 @@ SceneRoots:
   - {fileID: 1370604319}
   - {fileID: 3030684}
   - {fileID: 79545149}
+  - {fileID: 2110601101176573286}
