@@ -938,6 +938,7 @@ GameObject:
   - component: {fileID: 286854944}
   - component: {fileID: 286854946}
   - component: {fileID: 286854945}
+  - component: {fileID: 286854947}
   m_Layer: 5
   m_Name: TimerText
   m_TagString: Untagged
@@ -961,7 +962,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -123}
+  m_AnchoredPosition: {x: 50, y: -80}
   m_SizeDelta: {x: 300.1798, y: 118.34473}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &286854945
@@ -986,8 +987,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c6aaab183fc4c454e8018399f22cf09f, type: 2}
+  m_sharedMaterial: {fileID: 316507957433929476, guid: c6aaab183fc4c454e8018399f22cf09f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1019,7 +1020,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1061,6 +1062,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286854943}
   m_CullTransparentMesh: 1
+--- !u!95 &286854947
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286854943}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 49d7a17a30a6e1d4585df1e959abed5d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &302706850
 GameObject:
   m_ObjectHideFlags: 0
@@ -3315,10 +3337,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64062fe1c89b0f54d84bdd8a91846e26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 286854947}
   _inputTouch: {fileID: 889472929}
   _gameOverPanel: {fileID: 1468710380}
   _timerText: {fileID: 286854945}
-  _maxTImer: 10
+  _maxTimer: 15
   _timer: 0
   _isTimer: 0
 --- !u!1001 &851007600
