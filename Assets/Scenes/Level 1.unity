@@ -3340,6 +3340,7 @@ MonoBehaviour:
   _animator: {fileID: 286854947}
   _inputTouch: {fileID: 889472929}
   _gameOverPanel: {fileID: 1468710380}
+  _timerTextObject: {fileID: 286854943}
   _timerText: {fileID: 286854945}
   _maxTimer: 15
   _timer: 0
@@ -5303,7 +5304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ede9d9506d8a25d4f973d52908de2bb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coinClip: {fileID: 8300000, guid: 61ba0991aecc37e4fa6066e0cbbfac96, type: 3}
+  _clip: {fileID: 8300000, guid: 61ba0991aecc37e4fa6066e0cbbfac96, type: 3}
 --- !u!4 &1183064905 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 445714, guid: 8d3b36f175a633f429d7bda54c76550d, type: 3}

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Sound : MonoBehaviour
 {
-    [SerializeField] private AudioClip _coinClip;
+    [SerializeField] private AudioClip _clip;
     private AudioSource _source;
 
     private void Awake()
@@ -14,9 +14,9 @@ public class Sound : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if(_coinClip != null)
+            if(_clip != null)
             {
-                _source.PlayOneShot(_coinClip);
+                _source.PlayOneShot(_clip);
             }
         }
     }

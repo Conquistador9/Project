@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class InputTouch : MonoBehaviour
 {
+    [Header("Component")]
     [SerializeField] private Rigidbody _rb;
+
+    [Header("Settings")]
     [SerializeField] private float _speed;
     [SerializeField] private float _maxSpeed;
     [SerializeField] private float _dragFactor;
