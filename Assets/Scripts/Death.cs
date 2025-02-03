@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class DeathEvent : MonoBehaviour
+public class Death : MonoBehaviour
 {
     [SerializeField] private UnityEvent _event;
 

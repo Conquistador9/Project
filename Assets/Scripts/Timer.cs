@@ -6,6 +6,7 @@ public class Timer : MonoBehaviour
     [Header("Components")]
     [SerializeField] private Animator _animator;
     [SerializeField] private InputTouch _inputTouch;
+    [SerializeField] private GameObject _ball;
     [SerializeField] private GameObject _gameOverPanel;
     [SerializeField] private GameObject _timerTextObject;
     [SerializeField] private TMP_Text _timerText;
@@ -14,7 +15,7 @@ public class Timer : MonoBehaviour
     [SerializeField] private float _maxTimer;
     private GameObject _player;
     private float _timer;
-    private bool _isTimer= false;
+    private bool _isTimer = true;
 
     private void Start()
     {
@@ -27,40 +28,27 @@ public class Timer : MonoBehaviour
         FindPlayer();
         GameProcess();
         TimerView();
-        GameOverScreen();
     }
 
-    private void GameOverScreen()
-    {
-        if (!_isTimer)
-        {
-            _gameOverPanel.SetActive(true);
-            _timerTextObject.SetActive(false);
-            _inputTouch.enabled = false;
-            _inputTouch.Decelerate();
-        }
-    }
+    public void TimerFalse() => _isTimer = false;
 
     private void FindPlayer() => _player = GameObject.FindGameObjectWithTag("Player");
 
     private void GameProcess()
     {
-        if (_player)
+        if (_player && _isTimer)
         {
-            _isTimer = true;
             _timer -= Time.deltaTime;
             TimerColor();
 
             if (_timer <= 0f)
             {
                 TimerFalse();
-                _timer = 0f;
+                GameOverScreen();
             }
         }
         else TimerFalse();
     }
-
-    private void TimerFalse() => _isTimer = false;
 
     private void TimerView() => _timerText.text = Mathf.Round(_timer).ToString();
 
@@ -72,5 +60,12 @@ public class Timer : MonoBehaviour
             _animator.enabled = true;
         }
         else _timerText.color = Color.green;
+    }
+
+    private void GameOverScreen()
+    {
+        _gameOverPanel.SetActive(true);
+        _timerTextObject.SetActive(false);
+        _ball.SetActive(false);
     }
 }

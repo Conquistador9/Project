@@ -1544,7 +1544,7 @@ GameObject:
   - component: {fileID: 1213069513}
   - component: {fileID: 1213069512}
   m_Layer: 0
-  m_Name: League_of_Legends_Mako_-_Piercing_Light_feat_Mako_(musrocket.com)
+  m_Name: GameMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
