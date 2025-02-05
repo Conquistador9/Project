@@ -3,28 +3,33 @@ using TMPro;
 
 public class CoinText : MonoBehaviour
 {
-    [SerializeField] private TMP_Text _coinsText;
-    [SerializeField] private TMP_Text _coinsTextTwo;
+    [SerializeField] private TMP_Text _coinsText, _coinsTextTwo;
     private int _coins;
 
     private void Start()
     {
+   //     PlayerPrefs.DeleteKey("MyCoins");
+        _coins = PlayerPrefs.GetInt("MyCoins");
         TableText();
     }
 
-    private void Update()
+    public void ResetCoins()
     {
-        CollectedCoins();
+        PlayerPrefs.DeleteKey("MyCoins");
+        _coins = 0;
+        TableText();
     }
 
     public void AddCoin()
     {
         _coins++;
-        _coinsText.text = _coins.ToString();
+        PlayerPrefs.SetInt("MyCoins", _coins);
         TableText();
     }
 
-    private void TableText() => _coinsText.text = ($"{_coins}");
-
-    private void CollectedCoins() => _coinsTextTwo.text = ($"{_coins}/10");
+    private void TableText()
+    {
+        _coinsText.text = ($"{_coins}");
+        _coinsTextTwo.text = ($"{_coins}/10");
+    }
 }
