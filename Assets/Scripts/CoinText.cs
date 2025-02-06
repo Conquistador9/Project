@@ -9,7 +9,7 @@ public class CoinText : MonoBehaviour
     private void Start()
     {
    //     PlayerPrefs.DeleteKey("MyCoins");
-        _coins = PlayerPrefs.GetInt("MyCoins");
+        _coins = PlayerPrefs.GetInt("MyCoins", 0);
         TableText();
     }
 

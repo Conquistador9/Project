@@ -3554,6 +3554,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 837316217}
+        m_TargetAssemblyTypeName: CoinText, Assembly-CSharp
+        m_MethodName: ResetCoins
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &807432448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4021,6 +4033,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 837316217}
+        m_TargetAssemblyTypeName: CoinText, Assembly-CSharp
+        m_MethodName: ResetCoins
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &852145128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4426,54 +4450,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8455282458230707657, guid: b55e1b90b87925d4e8e6d8afdaf44bd8, type: 3}
   m_PrefabInstance: {fileID: 887118384}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &889472928
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 889472930}
-  - component: {fileID: 889472929}
-  m_Layer: 0
-  m_Name: InputTouch
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &889472929
+--- !u!114 &889472929 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1124734039445322919, guid: 4029c75de01cabb49a74c0787753e362, type: 3}
+  m_PrefabInstance: {fileID: 134554295100968007}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889472928}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b5517c1e5dfbab4cb26593fc0b360a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rb: {fileID: 593386612}
-  _speed: 0.7
-  _maxSpeed: 5
-  _dragFactor: 0.95
---- !u!4 &889472930
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889472928}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8491404, y: 20.537148, z: -17.41587}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &895519261 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 498872, guid: 9de82ec743bb24449a99f5cf1e325d61, type: 3}
@@ -8887,6 +8874,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 837316217}
+        m_TargetAssemblyTypeName: CoinText, Assembly-CSharp
+        m_MethodName: ResetCoins
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2072663306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9259,6 +9258,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 837316217}
+        m_TargetAssemblyTypeName: CoinText, Assembly-CSharp
+        m_MethodName: ResetCoins
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2131099620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9302,6 +9313,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 498872, guid: 9de82ec743bb24449a99f5cf1e325d61, type: 3}
   m_PrefabInstance: {fileID: 748478185}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &134554295100968007
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1100558182539565242, guid: 4029c75de01cabb49a74c0787753e362, type: 3}
+      propertyPath: m_Name
+      value: InputTouch
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124734039445322919, guid: 4029c75de01cabb49a74c0787753e362, type: 3}
+      propertyPath: _rb
+      value: 
+      objectReference: {fileID: 593386612}
+    - target: {fileID: 8468831203833701087, guid: 4029c75de01cabb49a74c0787753e362, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.8491404
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468831203833701087, guid: 4029c75de01cabb49a74c0787753e362, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 20.537148
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468831203833701087, guid: 4029c75de01cabb49a74c0787753e362, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.41587
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468831203833701087, guid: 4029c75de01cabb49a74c0787753e362, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468831203833701087, guid: 4029c75de01cabb49a74c0787753e362, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468831203833701087, guid: 4029c75de01cabb49a74c0787753e362, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468831203833701087, guid: 4029c75de01cabb49a74c0787753e362, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468831203833701087, guid: 4029c75de01cabb49a74c0787753e362, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468831203833701087, guid: 4029c75de01cabb49a74c0787753e362, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468831203833701087, guid: 4029c75de01cabb49a74c0787753e362, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4029c75de01cabb49a74c0787753e362, type: 3}
 --- !u!1001 &412711069426936665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9737,7 +9809,7 @@ SceneRoots:
   - {fileID: 441462229}
   - {fileID: 789500245}
   - {fileID: 693204526}
-  - {fileID: 889472930}
+  - {fileID: 134554295100968007}
   - {fileID: 166187247}
   - {fileID: 1382664293}
   - {fileID: 1091444730}
