@@ -3,12 +3,11 @@ using TMPro;
 
 public class CoinText : MonoBehaviour
 {
-    [SerializeField] private TMP_Text _coinsText, _coinsTextTwo;
+    [SerializeField] private TMP_Text _coinsText, _coinsTextTwo, _coinsTextThree;
     private int _coins;
 
     private void Start()
     {
-   //     PlayerPrefs.DeleteKey("MyCoins");
         _coins = PlayerPrefs.GetInt("MyCoins", 0);
         TableText();
     }
@@ -31,5 +30,6 @@ public class CoinText : MonoBehaviour
     {
         _coinsText.text = ($"{_coins}");
         _coinsTextTwo.text = ($"{_coins}/10");
+        _coinsTextThree.text = ($"{_coins}/52");
     }
 }

@@ -5,7 +5,6 @@ public class Timer : MonoBehaviour
 {
     [Header("Components")]
     [SerializeField] private Animator _animator;
-    [SerializeField] private InputTouch _inputTouch;
     [SerializeField] private GameObject _ball;
     [SerializeField] private GameObject _gameOverPanel;
     [SerializeField] private GameObject _timerTextObject;
