@@ -14,6 +14,6 @@ public class RestartGameCoins : MonoBehaviour
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
 
-        if (currentSceneName == _sceneName) PlayerPrefs.DeleteKey("MyCoins");
+        if (currentSceneName == _sceneName) PlayerPrefs.DeleteAll();
     }
 }
