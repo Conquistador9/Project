@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
+    [Header("Component")]
     [SerializeField] private Transform _ball;
+
+    [Header("Position")]
     [SerializeField] private float _positionZ;
     private Vector3 _offset;
 

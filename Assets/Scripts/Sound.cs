@@ -14,10 +14,7 @@ public class Sound : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if(_clip != null)
-            {
-                _source.PlayOneShot(_clip);
-            }
+            if(_clip != null) _source.PlayOneShot(_clip);
         }
     }
 }

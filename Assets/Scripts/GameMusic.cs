@@ -8,10 +8,7 @@ public class GameMusic : MonoBehaviour
     {
         GameObject obj = GameObject.FindWithTag("Music");
 
-        if(obj != null)
-        {
-            Destroy(gameObject);
-        }
+        if(obj != null) Destroy(gameObject);
         else
         {
             gameObject.tag = _musicTag;
